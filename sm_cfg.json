@@ -1,0 +1,99 @@
+{
+	"id": "Tony MM",
+	"url": "127.0.0.1:31234",
+	"mms": {},
+	"lms": {
+		"lm_id1": {
+			"id": "lm_id1",
+            "ep": "127.0.0.1:8888",
+			"ref_amqp_ep": "80.159.227.2:5672",
+            "ref_amqp_user": "",
+            "ref_amqp_password": "",
+			"ref_mmep": "127.0.0.1:31234",
+			"local_config": [{
+					"qtcode_list": [
+						"A1", "A2", "A3", "A4", "B1", "B2", "B3", "B4"
+					],
+					"message": {
+						"id": "sm1",
+						"endpoints": [{
+							"priority": "1",
+							"netop": "tim",
+							"mmep": "127.0.0.1:31234",
+							"amqpep": "80.159.227.2:5672"
+
+						}]
+					}
+				},
+				{
+					"qtcode_list": [
+						"A5", "A6", "B5", "B6"
+					],
+					"message": {
+						"id": "sm2",
+						"endpoints": [{
+								"priority": "1",
+								"netop": "tim",
+								"mmep": "127.0.0.1:31234",
+								"amqpep": "80.159.227.2:5672"
+
+							},
+							{
+								"priority": "2",
+								"netop": "magenta",
+								"mmep": "127.0.0.1:31234",
+								"amqpep": "localhost:30172"
+							}
+						]
+					}
+				},
+				{
+					"qtcode_list": [
+						"A7", "A8", "B7", "B8"
+					],
+					"message": {
+						"id": "sm3",
+						"endpoints": [{
+								"priority": "1",
+								"netop": "magenta",
+								"mmep": "127.0.0.1:31234",
+								"amqpep": "localhost:30172"
+
+							},
+							{
+								"priority": "2",
+								"netop": "tim",
+								"mmep": "127.0.0.1:31234",
+								"amqpep": "80.159.227.2:5672"
+							}
+						]
+					}
+				},
+				{
+					"qtcode_list": [
+						
+					],
+					"message": {
+						"id": "sm_def",
+						"endpoints": [{
+								"priority": "1",
+								"netop": "magenta",
+								"mmep": "127.0.0.1:31234",
+								"amqpep": ""
+
+							},
+							{
+								"priority": "1",
+								"netop": "tim",
+								"mmep": "127.0.0.1:31234",
+								"amqpep": ""
+							}
+						]
+					}
+				}
+			]
+		}
+
+	}
+
+}
