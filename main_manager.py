@@ -170,6 +170,7 @@ class LM_ApiServer(RequestHandler):
 
         show_current_configuration()
 
+        self.set_header("Content-Type", 'application/json')
         self.write({"info": "NEW configuration RECEIVED and APPLIED"})
 
 
